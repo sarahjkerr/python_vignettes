@@ -24,7 +24,7 @@ def search_graph(keyword):
     response = search_the_graph.json()
     
     for element in response['itemListElement']:
-        print(element['result']['name'] + ';' + str(element['result']['@type']) + ';' + element['result']['description'])
+        return element['result']['name'] + ';' + str(element['result']['@type']) + ';' + element['result']['description']
         
         
  #Apply search function
