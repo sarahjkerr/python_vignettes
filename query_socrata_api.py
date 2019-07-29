@@ -48,10 +48,11 @@ for i in range(num_loops):
     #Appends the results to the dataframe
     nysdos = nysdos.append(socrata_results, ignore_index=True)
     
-    #Gives you a heads up about status
-    print('It\'s ' + str(time.asctime()) + ' and I fetched ' + str(len(nysdos)) + ' records! Now I\'m taking a little nap before asking for more records so I don\'t blow up the API :) ')
-    
     #Puts some time between the API calls to be gentle to Socrata's infrastructure. I'd make the wait longer for bigger
     #requests with a sizeable number of loops
+    wait = np.random.randint(low=15, high=45, size=1)
+    time.sleep(wait)
     
-    time.sleep(15)
+    #Gives you a heads up about status
+    print('It\'s ' + str(time.asctime()) + ' and I fetched ' + str(len(nysdos)) + ' records! Now I\'m taking a ' + str(wait) + ' second nap before asking for more records so I don\'t blow up the API :) ')
+    
