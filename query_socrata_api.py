@@ -11,6 +11,11 @@ username = 'YOUR USERNAME'
 password = 'YOUR PASSWORD'
 dataset_id = 'n9v6-gdp6'
 
+client = Socrata('data.ny.gov',
+                app_token,
+                username=username,
+                password=password)
+
 #Create an empty dataframe where query results will be stored
 
 nysdos = pd.DataFrame()
