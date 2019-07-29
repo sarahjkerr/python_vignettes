@@ -56,3 +56,6 @@ for i in range(num_loops):
     #Gives you a heads up about status
     print('It\'s ' + str(time.asctime()) + ' and I fetched ' + str(len(nysdos)) + ' records! Now I\'m taking a ' + str(wait) + ' second nap before asking for more records so I don\'t blow up the API :) ')
     
+#It's Mon Jul 29 15:57:09 2019 and I fetched 30000 records! Now I'm taking a [29] second nap before asking for more records so I don't blow up the API :) 
+#It's Mon Jul 29 15:57:41 2019 and I fetched 60000 records! Now I'm taking a [19] second nap before asking for more records so I don't blow up the API :) 
+#It's Mon Jul 29 15:58:02 2019 and I fetched 88979 records! Now I'm taking a [44] second nap before asking for more records so I don't blow up the API :) 
